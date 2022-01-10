@@ -97,3 +97,23 @@ main {
   color: white;
   margin-bottom: 3rem;
 }
+
+@media (min-width: 30rem) {
+  
+  body {
+    display: flex;
+    place-content: center;
+    justify-content: center;
+    background-color: #555;
+  }
+
+  main {
+    max-width: 40rem;
+  }
+
+  .symbol {
+    font-size: 5rem;
+    margin-top: 0.5rem;
+  }
+
+}
