@@ -1,10 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-export default function GameOver({ gameOverScene, setGameOverScene, setIntroScene, newGame, result }) {
+export default function GameOver({ setGameOverScene, setIntroScene, newGame, result }) {
     
-    if (!gameOverScene) return null;
-
     return ReactDOM.createPortal(
         <div className='popup-container'>
             <h2 className="result">{result}</h2>

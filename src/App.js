@@ -115,18 +115,16 @@ function App() {
         currentTurn={currentTurn}
         fields={fields}
       />
-      <Intro
-        introScene={introScene}
+      {introScene && <Intro
         setIntroScene={setIntroScene}
         newGame={newGame}
-      />
-      <GameOver
-        gameOverScene={gameOverScene}
+      />}
+      {gameOverScene && <GameOver
         setGameOverScene={setGameOverScene}
         setIntroScene={setIntroScene}
         newGame={newGame}
         result={result}
-      />
+      />}
     </main>
   );
 }

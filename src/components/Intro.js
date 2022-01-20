@@ -1,10 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-export default function Intro({ introScene, newGame }) {
+export default function Intro({ newGame }) {
     
-    if (!introScene) return null;
-
     return ReactDOM.createPortal(
         <div className='popup-container'>
             <h1 className="headline">Tic Tac Toe</h1>
